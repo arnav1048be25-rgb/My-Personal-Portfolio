@@ -1684,19 +1684,37 @@ navLinks.forEach((link, index) => {
 
 <script>
 /* NAVIGATION CODE (your existing one) */
-navLinks.forEach((link, index) => {
-  link.addEventListener("click", () => {
+// NAVIGATION FIX
 
-    pages.forEach(page => page.classList.remove("active"));
-    navLinks.forEach(link => link.classList.remove("active"));
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
 
+navigationLinks.forEach((link, index) => {
+
+  link.addEventListener("click", function () {
+
+    // REMOVE ACTIVE FROM ALL BUTTONS
+    navigationLinks.forEach((nav) => {
+      nav.classList.remove("active");
+    });
+
+    // REMOVE ACTIVE FROM ALL PAGES
+    pages.forEach((page) => {
+      page.classList.remove("active");
+    });
+
+    // ADD ACTIVE ONLY TO CLICKED BUTTON
+    this.classList.add("active");
+
+    // ADD ACTIVE ONLY TO MATCHING PAGE
     pages[index].classList.add("active");
-    link.classList.add("active");
 
+    // SCROLL TOP
     window.scrollTo(0, 0);
-  });
-});
 
+  });
+
+});
 /* DOWNLOAD FUNCTION (ADD HERE — same script) */
 
 
