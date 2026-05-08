@@ -579,7 +579,7 @@ document.querySelectorAll(".read-more-btn").forEach(btn => {
 });
 document.querySelector(".form").addEventListener("submit", function(e) {
   e.preventDefault();
-  alert("✅ Message sent successfully!");
+  
 });
 const cards = document.querySelectorAll(".card img");
 const popup = document.getElementById("popup");
