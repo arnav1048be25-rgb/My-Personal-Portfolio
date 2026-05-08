@@ -229,23 +229,7 @@ input, textarea {
 
 html { font-family: var(--ff-poppins); }
 
-body {
-  background:
-    radial-gradient(circle at top left, #6d28d9 0%, transparent 25%),
-    radial-gradient(circle at bottom right, #9333ea 0%, transparent 25%),
-    linear-gradient(135deg, #0f0f12, #1a1a22, #111827) !important;
 
-  background-attachment: fixed !important;
-  background-size: cover !important;
-  color: white;
-}
-
-main,
-.main-content,
-.sidebar,
-article {
-  background: transparent !important;
-}
 
 
 
