@@ -3473,3 +3473,16 @@ main {
   text-align: center !important;
   align-items: center !important;
 }
+.article-title,
+.timeline .title-wrapper,
+.timeline-title,
+h3,
+h4 {
+  text-align: left !important;
+  justify-content: flex-start !important;
+  margin-left: 0 !important;
+}
+
+.timeline-item {
+  text-align: left !important;
+}
