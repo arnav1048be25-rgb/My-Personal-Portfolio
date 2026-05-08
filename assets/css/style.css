@@ -3436,3 +3436,16 @@ main {
 .card:hover .overlay {
   opacity: 1;
 }
+.testimonials-item-title {
+  width: 100% !important;
+  text-align: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  margin: 15px auto !important;
+}
+
+.testimonials-card {
+  text-align: center !important;
+  align-items: center !important;
+}
