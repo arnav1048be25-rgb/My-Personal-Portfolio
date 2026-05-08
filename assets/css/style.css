@@ -730,14 +730,28 @@ address {
   justify-content: center;
 }
 
+.testimonials-list {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 25px;
+}
+
+.testimonials-item {
+  min-width: calc(50% - 10px);
+  display: flex;
+  justify-content: center;
+}
+
 .testimonials-card {
   width: 100%;
+  background: #1f1f23;
+  border-radius: 20px;
+  padding: 40px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  padding: 30px;
 }
 
 .testimonials-avatar-box {
@@ -746,18 +760,23 @@ address {
   justify-content: center;
   align-items: center;
   margin-bottom: 20px;
-  position: relative;
 }
 
 .testimonials-avatar-box img {
-  display: block;
-  margin: 0 auto;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
+  object-fit: cover;
+  display: block;
 }
+
 .testimonials-item-title {
-  text-align: center !important;
-  width: 100%;
-  margin: 15px 0 !important;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.testimonials-text {
+  text-align: center;
 }
 
 .testimonials-text {
