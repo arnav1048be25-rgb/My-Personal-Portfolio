@@ -230,7 +230,28 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 
+body {
+  background: linear-gradient(
+    135deg,
+    #0f172a,
+    #1e3a8a,
+    #2563eb
+  ) !important;
 
+  background-attachment: fixed;
+  color: white;
+}
+.sidebar,
+article,
+.navbar,
+.testimonials-card,
+.service-item,
+.project-item,
+.blog-post-item {
+  background: #111827 !important;
+  border: 1px solid #1e3a8a;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.35);
+}
 
 
 
