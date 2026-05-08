@@ -592,28 +592,3 @@ cards.forEach(img => {
     popupImg.src = img.src;
   };
 });
-const form = document.querySelector("[data-form]");
-
-form.addEventListener("submit", function(e) {
-
-  e.preventDefault();
-
-  alert("Message sent successfully!");
-
-  form.reset();
-
-  // go to about page
-  document.querySelectorAll("[data-page]").forEach(page => {
-    page.classList.remove("active");
-  });
-
-  document.querySelectorAll("[data-nav-link]").forEach(link => {
-    link.classList.remove("active");
-  });
-
-  document.querySelector('[data-page="about"]').classList.add("active");
-  document.querySelectorAll("[data-nav-link]")[0].classList.add("active");
-
-});
-
-
