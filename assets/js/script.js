@@ -592,3 +592,38 @@ cards.forEach(img => {
     popupImg.src = img.src;
   };
 });
+const form = document.querySelector("[data-form]");
+const formInputs = document.querySelectorAll("[data-form-input]");
+const formBtn = document.querySelector("[data-form-btn]");
+
+formInputs.forEach((input) => {
+  input.addEventListener("input", () => {
+    if (form.checkValidity()) {
+      formBtn.removeAttribute("disabled");
+    } else {
+      formBtn.setAttribute("disabled", "");
+    }
+  });
+});
+
+form.addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  alert("Message sent successfully!");
+
+  form.reset();
+  formBtn.setAttribute("disabled", "");
+
+  document.querySelectorAll("[data-page]").forEach((page) => {
+    page.classList.remove("active");
+  });
+
+  document.querySelectorAll("[data-nav-link]").forEach((link) => {
+    link.classList.remove("active");
+  });
+
+  document.querySelector('[data-page="about"]').classList.add("active");
+  document.querySelector("[data-nav-link]").classList.add("active");
+
+  window.scrollTo(0, 0);
+});
