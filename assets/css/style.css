@@ -718,7 +718,30 @@ main {
 .testimonials-avatar-box {
   position: static; /* or remove position:absolute if present */
 }
+.testimonials-card {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  text-align: center !important;
+  padding: 30px !important;
+}
 
+.testimonials-item-title {
+  text-align: center !important;
+  width: 100%;
+  margin: 15px 0 !important;
+}
+
+.testimonials-text {
+  text-align: center !important;
+  margin: 0 auto !important;
+  max-width: 430px;
+  width: 100%;
+}
+
+.testimonials-avatar-box {
+  margin: 0 auto 20px auto !important;
+}
 .testimonials-item-title { margin-bottom: 7px; margin-left: 95px; }
 
 .testimonials-text {
