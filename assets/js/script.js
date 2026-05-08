@@ -136,41 +136,32 @@ for (let i = 0; i < formInputs.length; i++) {
 
 
 // page navigation variables
-const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const navLinks = document.querySelectorAll("[data-nav-link]");
 const pages = document.querySelectorAll("[data-page]");
 
-for (let i = 0; i < navigationLinks.length; i++) {
+navLinks.forEach((link) => {
 
-  navigationLinks[i].addEventListener("click", function () {
+  link.addEventListener("click", function () {
 
-    const selectedPage = this.innerText.trim().toLowerCase();
+    const target = this.innerText.trim().toLowerCase();
 
-    // REMOVE ACTIVE FROM ALL
-    for (let j = 0; j < pages.length; j++) {
-      pages[j].classList.remove("active");
-      navigationLinks[j].classList.remove("active");
-    }
+    // remove active everywhere
+    navLinks.forEach((item) => item.classList.remove("active"));
+    pages.forEach((page) => page.classList.remove("active"));
 
-    // ADD ACTIVE ONLY TO MATCHED PAGE
-    for (let j = 0; j < pages.length; j++) {
+    // active clicked button
+    this.classList.add("active");
 
-      if (selectedPage === pages[j].dataset.page) {
-
-        pages[j].classList.add("active");
-
-        // ACTIVE ONLY CLICKED BUTTON
-        this.classList.add("active");
-
+    // active matching page
+    pages.forEach((page) => {
+      if (page.dataset.page === target) {
+        page.classList.add("active");
       }
-
-    }
-
-    window.scrollTo(0, 0);
+    });
 
   });
 
-}
-
+});
 
 /*-----------------------------------*\
   #BLOG SEARCH AND FILTER FUNCTIONALITY
