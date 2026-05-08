@@ -247,32 +247,7 @@ article {
   background: transparent !important;
 }
 
-.sidebar,
-article,
-.testimonials-card,
-.service-item,
-.project-item,
-.blog-post-item {
-  background: rgba(255, 255, 255, 0.05) !important;
-  backdrop-filter: blur(12px) !important;
-  border: 1px solid rgba(255,255,255,0.08) !important;
-  box-shadow: 0 8px 30px rgba(0,0,0,0.3) !important;
-}
 
-.service-item:hover,
-.project-item:hover,
-.blog-post-item:hover,
-.testimonials-card:hover {
-  transform: translateY(-5px);
-  transition: 0.3s ease;
-  box-shadow: 0 10px 35px rgba(168,85,247,0.35);
-}
-
-.navbar {
-  background: rgba(20,20,25,0.75) !important;
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255,255,255,0.08);
-}
 
 
 
