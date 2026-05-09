@@ -3546,42 +3546,6 @@ h4 {
 }
 /* Tech Stack Section */
 
-.tech-stack{
-  display:flex;
-  justify-content:center;
-  flex-wrap:wrap;
-  gap:25px;
-  margin-top:40px;
-}
 
-.tech-card{
-  width:160px;
-  height:160px;
-  background:#1f1f1f;
-  border-radius:25px;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  transition:0.4s;
-  border:1px solid #2f2f2f;
-}
-
-.tech-card ion-icon{
-  font-size:55px;
-  color:#ffc94d;
-  margin-bottom:15px;
-}
-
-.tech-card span{
-  font-size:18px;
-  color:white;
-  font-weight:600;
-}
-
-.tech-card:hover{
-  transform:translateY(-10px);
-  border-color:#ffc94d;
-}
 
 
