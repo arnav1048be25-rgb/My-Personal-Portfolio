@@ -3569,15 +3569,15 @@ h4 {
 
 /* Image */
 .project-img img {
-  width: 100%;
-  border-radius: 20px;
+  width: 20%;
+  border-radius: 10px;
   display: block;
 }
 
 /* Title */
 .project-title {
   margin-top: 18px;
-  font-size: 30px;
+  font-size: 100px;
   text-align: center;
 }
 
