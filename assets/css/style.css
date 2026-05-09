@@ -3544,7 +3544,61 @@ h4 {
   color:#ffc94d;
   transition:0.3s;
 }
-/* Tech Stack Section */
+/* Footer */
+
+.portfolio-footer{
+  margin-top: 80px;
+  padding: 70px 20px;
+  text-align: center;
+  background: #111;
+  border-top: 1px solid #2a2a2a;
+}
+
+.portfolio-footer h2{
+  font-size: 38px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.portfolio-footer p{
+  color: #bdbdbd;
+  max-width: 700px;
+  margin: auto;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+.footer-socials{
+  margin-top: 35px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+.footer-socials a{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #1f1f1f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffc94d;
+  font-size: 28px;
+  transition: 0.3s;
+}
+
+.footer-socials a:hover{
+  transform: translateY(-8px);
+  background: #ffc94d;
+  color: black;
+}
+
+.copyright{
+  margin-top: 40px !important;
+  font-size: 15px !important;
+  color: #777 !important;
+}
 
 
 
