@@ -3552,3 +3552,38 @@ h4 {
   text-align: center;
   width: 100%;
 }
+/* Portfolio Items Center */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+}
+
+.project-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Image */
+.project-img img {
+  width: 100%;
+  border-radius: 20px;
+  display: block;
+}
+
+/* Title */
+.project-title {
+  margin-top: 18px;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Category Text */
+.project-category {
+  text-align: center;
+  font-size: 22px;
+  color: #999;
+}
