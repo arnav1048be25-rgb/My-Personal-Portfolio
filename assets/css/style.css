@@ -1207,7 +1207,7 @@ address {
   background: var(--eerie-black-2);
   color: var(--light-gray);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
   padding: 12px 16px;
@@ -3487,62 +3487,7 @@ h4 {
   text-align: left !important;
 }
 /* Stats Section */
-.stats-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
-.stats-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-/* Numbers */
-.stats-card h3 {
-  font-size: 50px;
-  font-weight: 700;
-  color: #ffc94d;
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-/* Text */
-.stats-card p {
-  font-size: 20px;
-  color: #d6d6d6;
-  text-align: center;
-}
-.stats-box{
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  width: 100%;
-}
-
-.stats-card{
-  width: 320px;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;   /* THIS CENTERS EVERYTHING */
-  text-align: center;
-  border-radius: 20px;
-  background: #1f1f1f;
-}
-
-/* Number */
-.stats-card h3{
-  font-size: 55px;
-  color: #ffc94d;
-  margin: 0;
-  text-align: center;
-  width: 100%;
-}
 
 
 
