@@ -3642,7 +3642,19 @@ h4 {
   background:#ffc94d;
   color:black;
 }
+.download-resume {
+  margin-bottom: 30px !important;
+  padding-bottom: 20px !important;
+}
 
+article[data-page] {
+  padding-bottom: 30px !important;
+  min-height: auto !important;
+}
+
+footer {
+  margin-top: 0 !important;
+}
 
 
 
