@@ -3560,30 +3560,3 @@ h4 {
   gap: 40px;
 }
 
-.project-item {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-/* Image */
-.project-img img {
-  width: 20%;
-  border-radius: 10px;
-  display: block;
-}
-
-/* Title */
-.project-title {
-  margin-top: 18px;
-  font-size: 50px;
-  text-align: center;
-}
-
-/* Category Text */
-.project-category {
-  text-align: center;
-  font-size: 22px;
-  color: #999;
-}
