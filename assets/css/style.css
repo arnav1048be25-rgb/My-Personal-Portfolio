@@ -3488,6 +3488,61 @@ h4 {
 }
 /* Stats Section */
 
+/* Animated Background Glow */
 
+.blur-circle{
+  position: fixed;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+  animation: float 8s infinite ease-in-out;
+}
+
+.blur1{
+  background: #7b2ff7;
+  top: 10%;
+  left: 5%;
+}
+
+.blur2{
+  background: #ffc94d;
+  bottom: 10%;
+  right: 5%;
+}
+
+@keyframes float{
+	
+  0%{
+    transform: translateY(0px);
+  }
+  50%{
+    transform: translateY(-40px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+}
+.project-item,
+.stats-card,
+.service-item{
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 0 25px rgba(0,0,0,0.3);
+  transition: 0.4s;
+}
+
+.project-item:hover,
+.stats-card:hover,
+.service-item:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 0 30px rgba(255,201,77,0.4);
+}
+.navbar-link:hover{
+  color:#ffc94d;
+  transition:0.3s;
+}
 
 
