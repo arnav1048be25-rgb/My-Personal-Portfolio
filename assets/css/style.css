@@ -3543,5 +3543,30 @@ h4 {
   text-align: center;
   width: 100%;
 }
+.project-item:hover{
+  transform: translateY(-10px);
+  transition:0.4s;
+}
+
+.project-item:hover img{
+  box-shadow: 0 0 30px rgba(255,201,77,0.5);
+}
+.project-item{
+  opacity:0;
+  transform:translateY(40px);
+  animation:fadeUp 1s forwards;
+}
+
+@keyframes fadeUp{
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+.project-item{
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border:1px solid rgba(255,255,255,0.1);
+}
 
 
